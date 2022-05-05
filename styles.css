@@ -1,5 +1,4 @@
 :root{
-    /* --basic-key-width: 70px; */
     --basic-key-width: calc(100vw / 20);
     --gap: 5px;
     --font: 22px;

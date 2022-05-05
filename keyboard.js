@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 /* eslint-disable no-param-reassign */
 import Key from './key.js';
 import languages from './layouts/languages.js';
@@ -14,7 +13,6 @@ export default class Keyboard {
     this.keysPressed = new Set();
     this.langs = languages;
     this.keyBtns = [];
-    // this.startPos = null;
   }
 
   init(lang) {
@@ -90,7 +88,6 @@ export default class Keyboard {
     }
     // делаем шифт
     if (this.keysPressed.has('Shift') && !e.repeat) {
-      // this.cursorPosStart = this.output.selectionStart;
       this.keyBtns.forEach((btn) => {
         if (btn.shift) {
           if (this.isCaps) {
