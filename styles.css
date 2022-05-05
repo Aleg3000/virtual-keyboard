@@ -1,0 +1,69 @@
+:root{
+    --basic-key-width: calc(100vw / 20);
+    --gap: 5px;
+    --font: 22px;
+}
+
+/* сделать резиновый шрифт и высоту инпута в вх */
+
+.keyboard-input {
+    display: block;
+    width: 90vw;
+    margin: 30px auto;
+    padding: 0px;
+    font-size: 20px;
+    height: 35vh;
+    min-height: 300px;
+  }
+
+.getWidthSpan{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.keyboard{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 3vh 0;
+    width: 90vw;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    gap: 5px 5px;
+    align-items: flex-start;
+    
+}
+
+.sub{
+    text-align: left;
+    padding-top: calc(var(--basic-key-width) / 15);
+    padding-left: calc(var(--basic-key-width) / 10);
+    height: calc(var(--basic-key-width) / 3.5);
+}
+
+.key{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: var(--basic-key-width);
+    background-color: rgb(68, 59, 59);
+    color: aliceblue;
+    text-align: center;
+    font-size: calc(var(--basic-key-width) / 3.5);
+    border-radius: 4px;
+    box-shadow: inset 0 -2px 0 #aaaaaa, inset 0px 1px 1px -1px #fff, 0px 1px 1px 0px #7a7a7a;
+}
+
+.pressed{
+    background-color: green;
+    transform: scale(0.95, 0.95);
+}
+
+
+.br{
+    flex-basis: 100%;
+    height: 0px;
+}
