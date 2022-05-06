@@ -35,6 +35,11 @@ export default class Keyboard {
     document.addEventListener('keyup', this.handleEvent);
     document.addEventListener('mousedown', this.preHandleEvent);
     document.addEventListener('mouseup', this.preHandleEvent);
+
+    this.description = document.createElement('div');
+    this.description.classList.add('description');
+    this.description.innerHTML = 'Клавиатура создана на Win, смена языка клавишами ctrl + alt';
+    this.main.append(this.description);
   }
 
   createKeys(lang, key) {
